@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
-
+import DarkModeToggleButton from "../ui/DarkModeToggle";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -62,6 +62,10 @@ function NavBar() {
               <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <DarkModeToggleButton />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
