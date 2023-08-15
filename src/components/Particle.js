@@ -1,12 +1,18 @@
 import React from "react";
 import Particles from "react-tsparticles";
+// import Particles from "react-particles";
 
 function Particle() {
   return (
+    // <Particles preset="firefly" />
     <Particles
       id="tsparticles"
+      preset="firefly"
       params={{
         particles: {
+          color: {
+            value: "#ffffff",
+          },
           number: {
             value: 160,
             density: {
