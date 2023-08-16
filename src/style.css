@@ -10,31 +10,16 @@
     --color-blue-400: #9ca3af;
     --color-blue-500: #6b7280;
     --color-blue-600: #4b5563;
-    --color-blue-700: #374151;
-    --color-blue-800: #1f2937;
+    --color-blue-700: #6b87b4;
+    --color-blue-800: #324155;
     --color-blue-900: #4d71d386;
-
-    --color-green-100: #dcfce7;
-    --color-green-700: #15803d;
-    --color-yellow-100: #fef9c3;
-    --color-yellow-700: #a16207;
-    --color-silver-100: #e5e7eb;
-    --color-silver-700: #374151;
-    --color-indigo-100: #e0e7ff;
-    --color-indigo-700: #4338ca;
-
-    --color-red-100: #fee2e2;
-    --color-red-700: #b91c1c;
-    --color-red-800: #991b1b;
 
     --backdrop-color: rgba(255, 255, 255, 0.1);
 
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+    /* --color-text: white; */
+    --imp-text-color: #18212f;
 
-    --image-grayscale: 0;
-    --image-opacity: 100%;
+    --modal-bg-color: #6c87b4;
   }
 
   &.dark-mode {
@@ -50,32 +35,15 @@
     --color-blue-800: #f3f4f6;
     --color-blue-900: #f9fafb;
 
-    --color-green-100: #166534;
-    --color-green-700: #dcfce7;
-    --color-yellow-100: #854d0e;
-    --color-yellow-700: #fef9c3;
-    --color-silver-100: #374151;
-    --color-silver-700: #f3f4f6;
-    --color-indigo-100: #3730a3;
-    --color-indigo-700: #e0e7ff;
-
-    --color-red-100: #fee2e2;
-    --color-red-700: #b91c1c;
-    --color-red-800: #991b1b;
-
     --backdrop-color: rgba(0, 0, 0, 0.3);
 
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
-
-    --image-grayscale: 10%;
-    --image-opacity: 90%;
+    --imp-text-color: #6a70df;
+    --modal-bg-color: #1a1926;
   }
 }
 
 html {
-  --imp-text-color: #6a70df;
+  /* --imp-text-color: #6a70df; */
 }
 
 body {
@@ -350,12 +318,12 @@ button:focus {
 }
 
 .main-name {
-  color: #675ff8;
+  color: var(--imp-text-color);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #6a70df !important;
+  color: var(--imp-text-color) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
@@ -544,7 +512,8 @@ button:focus {
 
 /* Modal */
 .modal-content {
-  background-color: #1a1926 !important;
+  background-color: var(--modal-bg-color) !important;
+  /* #6C87B4 */
   color: white;
 }
 

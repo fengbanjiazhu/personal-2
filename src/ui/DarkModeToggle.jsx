@@ -53,13 +53,14 @@ const DarkModeToggle = styled(Switch)(({ theme }) => ({
 }));
 
 export default function DarkModeToggleButton() {
-  const { toggleDarkMode } = useDarkMode();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <FormGroup>
       <FormControlLabel
         onClick={toggleDarkMode}
-        control={<DarkModeToggle sx={{ m: 1 }} defaultChecked />}
+        control={<DarkModeToggle sx={{ m: 1 }} defaultChecked={isDarkMode} />}
+        style={{ margin: "auto" }}
         label=""
       />
     </FormGroup>

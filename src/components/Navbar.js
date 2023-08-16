@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logoLight from "../Assets/logo-light.png";
+import logoDark from "../Assets/logo-dark.png";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import DarkModeToggleButton from "../ui/DarkModeToggle";
@@ -12,6 +13,7 @@ import { useDarkMode } from "../ui/darkmodeContext";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { isDarkMode } = useDarkMode();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -27,7 +29,7 @@ function NavBar() {
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={isDarkMode ? logoDark : logoLight} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

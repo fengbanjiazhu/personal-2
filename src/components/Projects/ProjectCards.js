@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -27,7 +28,7 @@ function ProjectCards(props) {
       </Card>
 
       <Modal centered={true} show={show} onHide={handleClose}>
-        <Modal.Header closeButton closeVariant="black">
+        <Modal.Header closeButton closeVariant="white">
           <Modal.Title>Detail of {props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{props.description}</Modal.Body>
