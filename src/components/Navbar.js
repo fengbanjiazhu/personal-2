@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import DarkModeToggleButton from "../ui/DarkModeToggle";
 import { CgFileDocument } from "react-icons/cg";
+import { useDarkMode } from "../ui/darkmodeContext";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
