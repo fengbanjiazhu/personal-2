@@ -6,9 +6,9 @@ function ProjectCarousel({ images }) {
 
   return (
     <Carousel>
-      {images.map((img) => {
+      {images.map((img, index) => {
         return (
-          <Carousel.Item key={img.index}>
+          <Carousel.Item key={index}>
             <Image src={img} fluid />
           </Carousel.Item>
         );

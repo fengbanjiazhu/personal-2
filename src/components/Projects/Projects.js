@@ -12,6 +12,16 @@ import uptown5 from "../../Assets/Projects/uptown/uptown-5.jpg";
 import phpLms1 from "../../Assets/Projects/php-lms/php-lms-1.jpg";
 import phpLms2 from "../../Assets/Projects/php-lms/php-lms-2.jpg";
 
+import wildOasis1 from "../../Assets/Projects/wild-oasis/wild-oasis-1.jpg";
+import wildOasis2 from "../../Assets/Projects/wild-oasis/wild-oasis-2.jpg";
+import wildOasis3 from "../../Assets/Projects/wild-oasis/wild-oasis-3.jpg";
+
+import natours from "../../Assets/Projects/natours.jpg";
+import forkify from "../../Assets/Projects/forkify.jpg";
+import pokedex from "../../Assets/Projects/poke-dex.jpg";
+import reactVitePizza from "../../Assets/Projects/react-pizza.jpg";
+import dummyQuotes from "../../Assets/Projects/dummy-quotes.jpg";
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,18 +33,7 @@ function Projects() {
         <p style={{ color: "white" }}>Here are a few projects I've worked on recently.</p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[phpLms1, phpLms2]}
-              imgPath={phpLms1}
-              isBlog={false}
-              title="PHP LMS"
-              description="PHP library management system"
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              // demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
+          {/* Uptown */}
           <Col md={4} className="project-card">
             <ProjectCard
               images={[uptown1, uptown2, uptown3, uptown4, uptown5]}
@@ -42,8 +41,95 @@ function Projects() {
               isBlog={false}
               title="Uptown project"
               description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with"
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
+              ghLink="https://github.com/fengbanjiazhu/Uptown"
+            />
+          </Col>
+          {/* PHP-LMS */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[phpLms1, phpLms2]}
+              imgPath={phpLms1}
+              isBlog={false}
+              title="PHP LMS"
+              description="PHP library management system, with admin page for CMS."
+              ghLink="https://github.com/fengbanjiazhu/php-LMS"
+            />
+          </Col>
+          {/* Wild Oasis */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[wildOasis1, wildOasis2, wildOasis3]}
+              imgPath={wildOasis1}
+              isBlog={false}
+              title="Wild Oasis"
+              description="Frontend: React, Backend: Supabase. A react booking management web app. React Query; React hook form; Supabase; Styled component;"
+              ghLink="https://github.com/fengbanjiazhu/Wild-Oasis"
+              demoLink="https://inquisitive-wisp-64740b.netlify.app/login"
+            />
+          </Col>
+
+          {/* Natours */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[natours]}
+              imgPath={natours}
+              isBlog={false}
+              title="Natours"
+              description="Server side rendering with Node.JS. Tour booking website."
+              ghLink="https://github.com/fengbanjiazhu/Natours"
+              demoLink="https://natours-project-7nqu.onrender.com/"
+            />
+          </Col>
+
+          {/* pokedex */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[pokedex]}
+              imgPath={pokedex}
+              isBlog={false}
+              title="Pokedex"
+              description="Build with pure JS. Searching for pokemon details."
+              ghLink="https://github.com/fengbanjiazhu/PokeDex"
+              demoLink="https://fengbanjiazhu.github.io/PokeDex/"
+            />
+          </Col>
+
+          {/* react-pizza */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[reactVitePizza]}
+              imgPath={reactVitePizza}
+              isBlog={false}
+              title="React Pizza"
+              description="React focused project."
+              ghLink="https://github.com/fengbanjiazhu/React-vite-pizza"
+              demoLink="https://dulcet-dasik-a3ce2f.netlify.app/"
+            />
+          </Col>
+
+          {/* react dummy quote */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[dummyQuotes]}
+              imgPath={dummyQuotes}
+              isBlog={false}
+              title="React Dummy Quotes"
+              description="A dummy quotes build with React, uses hooks, router.(Fetching online Firebase API)"
+              ghLink="https://github.com/fengbanjiazhu/quotes"
+              demoLink="hhttps://fengbanjiazhu.github.io/quotes"
+            />
+          </Col>
+
+          {/* Forkify */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[forkify]}
+              imgPath={forkify}
+              isBlog={false}
+              title="Forkify"
+              description="Build with pure JS. Front end focused."
+              ghLink="https://github.com/fengbanjiazhu/Forkify-practice"
+              demoLink="https://silly-ganache-79ed83.netlify.app"
             />
           </Col>
         </Row>

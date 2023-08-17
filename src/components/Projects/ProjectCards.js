@@ -27,7 +27,7 @@ function ProjectCards(props) {
         </Card.Body>
       </Card>
 
-      <Modal centered={true} show={show} onHide={handleClose}>
+      <Modal size="lg" centered={true} show={show} onHide={handleClose}>
         <Modal.Header closeButton closeVariant="white">
           <Modal.Title>Detail of {props.title}</Modal.Title>
         </Modal.Header>
