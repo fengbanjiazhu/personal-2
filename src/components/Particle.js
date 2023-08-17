@@ -6,11 +6,6 @@ function Particle() {
     <Particles
       id="tsparticles"
       params={{
-        // background: {
-        //   color: {
-        //     value: "#ffffff",
-        //   },
-        // },
         particles: {
           color: {
             value: "#ffffff",
