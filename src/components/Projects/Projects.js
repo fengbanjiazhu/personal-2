@@ -3,8 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import uptown from "../../Assets/Projects/Uptown.jpg";
-import PHPlms from "../../Assets/Projects/LMS.jpg";
+import uptown1 from "../../Assets/Projects/uptown/uptown-1.jpg";
+import uptown2 from "../../Assets/Projects/uptown/uptown-2.jpg";
+import uptown3 from "../../Assets/Projects/uptown/uptown-3.jpg";
+import uptown4 from "../../Assets/Projects/uptown/uptown-4.jpg";
+import uptown5 from "../../Assets/Projects/uptown/uptown-5.jpg";
+
+import phpLms1 from "../../Assets/Projects/php-lms/php-lms-1.jpg";
+import phpLms2 from "../../Assets/Projects/php-lms/php-lms-2.jpg";
 
 function Projects() {
   return (
@@ -19,7 +25,8 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={PHPlms}
+              images={[phpLms1, phpLms2]}
+              imgPath={phpLms1}
               isBlog={false}
               title="PHP LMS"
               description="PHP library management system"
@@ -30,7 +37,8 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={uptown}
+              images={[uptown1, uptown2, uptown3, uptown4, uptown5]}
+              imgPath={uptown1}
               isBlog={false}
               title="Uptown project"
               description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with"

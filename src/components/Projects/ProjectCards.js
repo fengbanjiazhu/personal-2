@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import ProjectCarousel from "./ProjectCarousel";
 
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
@@ -30,7 +31,10 @@ function ProjectCards(props) {
         <Modal.Header closeButton closeVariant="white">
           <Modal.Title>Detail of {props.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{props.description}</Modal.Body>
+        <Modal.Body>
+          {props.images && <ProjectCarousel images={props.images} />}
+          <p>{props.description}</p>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
@@ -40,8 +44,6 @@ function ProjectCards(props) {
             <BsGithub /> &nbsp;
             {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-
-          {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
           {!props.isBlog && props.demoLink && (
             <Button
