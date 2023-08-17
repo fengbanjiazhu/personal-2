@@ -4,7 +4,6 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import TimeLine from "./TimeLine";
 
@@ -28,7 +27,6 @@ function About() {
             <Aboutcard />
           </Col>
           <Col md={5} style={{ paddingTop: "120px", paddingBottom: "50px" }} className="about-img">
-            {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
             <TimeLine />
           </Col>
         </Row>
