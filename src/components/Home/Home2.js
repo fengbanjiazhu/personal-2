@@ -31,9 +31,8 @@ function Home2() {
               </i>
               <br />
               <br />
-              Looking forward to have an opportunity that will allow me to work with &nbsp;
-              <b className="purple">experienced professionals</b> and contribute to the development
-              of&nbsp;
+              Looking forward to have an opportunity that will allow me to work with experienced
+              professionals and contribute to the development of&nbsp;
               <i>
                 <b className="purple">high-performance website applications.</b>
               </i>
