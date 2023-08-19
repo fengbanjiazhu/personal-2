@@ -5,7 +5,7 @@ function ProjectCarousel({ images }) {
   if (!images) return null;
 
   return (
-    <Carousel>
+    <Carousel style={{ marginTop: "1rem" }}>
       {images.map((img, index) => {
         return (
           <Carousel.Item key={index}>

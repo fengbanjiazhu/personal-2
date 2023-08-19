@@ -41,7 +41,7 @@ function Projects() {
               isBlog={false}
               title="Uptown project"
               hosting="pending"
-              description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with"
+              description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with google dialogFlow."
               ghLink="https://github.com/fengbanjiazhu/Uptown"
             />
           </Col>
@@ -64,7 +64,7 @@ function Projects() {
               isBlog={false}
               title="Wild Oasis"
               hosting="hosted"
-              description="Frontend: React, Backend: Supabase. A react booking management web app. React Query; React hook form; Supabase; Styled component;"
+              description="Frontend: React, Backend: Supabase. A react booking management web app. React Query; React hook form; Supabase; Styled component;  //TEST ACCOUNT will be available soon"
               ghLink="https://github.com/fengbanjiazhu/Wild-Oasis"
               demoLink="https://inquisitive-wisp-64740b.netlify.app/login"
             />

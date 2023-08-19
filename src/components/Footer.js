@@ -15,7 +15,7 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Customized and Enhanced by Jeffrey Ren | 2023</h3>
-          <h3>Features added: project detail modal; light & dark mode; timeline.</h3>
+          <h3>Features added: project detail modal; light & dark mode etc.</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

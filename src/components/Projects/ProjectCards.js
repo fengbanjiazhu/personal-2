@@ -48,14 +48,9 @@ function ProjectCards({
           <Modal.Title>Detail of {title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {}
-          {/* <StatusTag type="yellow">pending</StatusTag> */}
-          {/* <StatusTag type="green">hosted</StatusTag> */}
           <StatusTag type={hostStatus[hosting]}>{hosting.replaceAll("-", " ")}</StatusTag>
-        </Modal.Body>
-        <Modal.Body>
           {images && <ProjectCarousel images={images} />}
-          <p>{description}</p>
+          <p style={{ marginTop: "1rem" }}>{description}</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
