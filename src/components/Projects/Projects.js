@@ -40,6 +40,7 @@ function Projects() {
               imgPath={uptown1}
               isBlog={false}
               title="Uptown project"
+              hosting="pending"
               description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with"
               ghLink="https://github.com/fengbanjiazhu/Uptown"
             />
@@ -62,6 +63,7 @@ function Projects() {
               imgPath={wildOasis1}
               isBlog={false}
               title="Wild Oasis"
+              hosting="hosted"
               description="Frontend: React, Backend: Supabase. A react booking management web app. React Query; React hook form; Supabase; Styled component;"
               ghLink="https://github.com/fengbanjiazhu/Wild-Oasis"
               demoLink="https://inquisitive-wisp-64740b.netlify.app/login"
@@ -75,6 +77,7 @@ function Projects() {
               imgPath={natours}
               isBlog={false}
               title="Natours"
+              hosting="hosted"
               description="Server side rendering with Node.JS. Tour booking website."
               ghLink="https://github.com/fengbanjiazhu/Natours"
               demoLink="https://natours-project-7nqu.onrender.com/"
@@ -88,6 +91,7 @@ function Projects() {
               imgPath={pokedex}
               isBlog={false}
               title="Pokedex"
+              hosting="hosted"
               description="Build with pure JS. Searching for pokemon details."
               ghLink="https://github.com/fengbanjiazhu/PokeDex"
               demoLink="https://fengbanjiazhu.github.io/PokeDex/"
@@ -101,6 +105,7 @@ function Projects() {
               imgPath={reactVitePizza}
               isBlog={false}
               title="React Pizza"
+              hosting="hosted"
               description="React focused project."
               ghLink="https://github.com/fengbanjiazhu/React-vite-pizza"
               demoLink="https://dulcet-dasik-a3ce2f.netlify.app/"
@@ -114,6 +119,7 @@ function Projects() {
               imgPath={dummyQuotes}
               isBlog={false}
               title="React Dummy Quotes"
+              hosting="hosted"
               description="A dummy quotes build with React, uses hooks, router.(Fetching online Firebase API)"
               ghLink="https://github.com/fengbanjiazhu/quotes"
               demoLink="hhttps://fengbanjiazhu.github.io/quotes"
@@ -127,6 +133,7 @@ function Projects() {
               imgPath={forkify}
               isBlog={false}
               title="Forkify"
+              hosting="hosted"
               description="Build with pure JS. Front end focused."
               ghLink="https://github.com/fengbanjiazhu/Forkify-practice"
               demoLink="https://silly-ganache-79ed83.netlify.app"

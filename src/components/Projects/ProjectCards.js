@@ -4,22 +4,38 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import ProjectCarousel from "./ProjectCarousel";
+import StatusTag from "../../ui/StatusTag";
 
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCards(props) {
+function ProjectCards({
+  images,
+  imgPath,
+  title,
+  description,
+  ghLink,
+  demoLink,
+  isBlog,
+  hosting = "no-hosting-plan",
+}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const hostStatus = {
+    pending: "yellow",
+    hosted: "green",
+    "no-hosting-plan": "red",
+  };
+
   return (
     <>
       <Card className="project-card-view">
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <Card.Img variant="top" src={imgPath} alt="card-img" />
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
+          <Card.Title>{title}</Card.Title>
 
           <Button variant="primary" onClick={handleShow}>
             See Details
@@ -29,26 +45,32 @@ function ProjectCards(props) {
 
       <Modal size="lg" centered={true} show={show} onHide={handleClose}>
         <Modal.Header closeButton closeVariant="white">
-          <Modal.Title>Detail of {props.title}</Modal.Title>
+          <Modal.Title>Detail of {title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {props.images && <ProjectCarousel images={props.images} />}
-          <p>{props.description}</p>
+          {}
+          {/* <StatusTag type="yellow">pending</StatusTag> */}
+          {/* <StatusTag type="green">hosted</StatusTag> */}
+          <StatusTag type={hostStatus[hosting]}>{hosting.replaceAll("-", " ")}</StatusTag>
+        </Modal.Body>
+        <Modal.Body>
+          {images && <ProjectCarousel images={images} />}
+          <p>{description}</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
 
-          <Button variant="primary" href={props.ghLink} target="_blank">
+          <Button variant="primary" href={ghLink} target="_blank">
             <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
+            {isBlog ? "Blog" : "GitHub"}
           </Button>
 
-          {!props.isBlog && props.demoLink && (
+          {!isBlog && demoLink && (
             <Button
               variant="primary"
-              href={props.demoLink}
+              href={demoLink}
               target="_blank"
               style={{ marginLeft: "10px" }}
             >
