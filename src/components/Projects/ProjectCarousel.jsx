@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import Image from "react-bootstrap/Image";
+import { Image } from "antd";
 
 function ProjectCarousel({ images }) {
   if (!images) return null;
@@ -9,7 +9,7 @@ function ProjectCarousel({ images }) {
       {images.map((img, index) => {
         return (
           <Carousel.Item key={index}>
-            <Image src={img} fluid />
+            <Image src={img} />
           </Carousel.Item>
         );
       })}
