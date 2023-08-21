@@ -26,8 +26,9 @@
 
     /* --color-text: white; */
     --imp-text-color: #18212f;
-
     --modal-bg-color: #6c87b4;
+    --btn-primary: #364286;
+
     --footer-bg: #373e5b;
   }
 
@@ -55,6 +56,7 @@
 
     --imp-text-color: #6a70df;
     --modal-bg-color: #1a1926;
+    --btn-primary: #4555ad;
 
     --footer-bg: rgb(10, 4, 22);
   }
@@ -581,8 +583,8 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #364286 !important;
-  border-color: #364286 !important;
+  background-color: var(--btn-primary) !important;
+  border-color: var(--btn-primary) !important;
 }
 
 .btn-primary:hover {
