@@ -48,6 +48,7 @@ function SendEmail() {
           rules={[
             {
               required: true,
+              message: "Please enter your name",
             },
           ]}
         >
@@ -59,6 +60,7 @@ function SendEmail() {
             {
               type: "email",
               required: true,
+              message: "Please enter your email address",
             },
           ]}
         >
@@ -66,7 +68,7 @@ function SendEmail() {
         </Form.Item>
 
         <Form.Item name={["newText", "message"]} style={{ color: "white" }}>
-          <Input.TextArea />
+          <Input.TextArea placeholder="Message" />
         </Form.Item>
         <Form.Item>
           <Button className="btn-primary" type="primary" htmlType="submit" disabled={isLoading}>

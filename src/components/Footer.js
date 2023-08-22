@@ -11,11 +11,9 @@ function Footer() {
       <Row>
         <Col md="4" className="footer-copywright">
           <h3>Original Design by Soumyajit Behera</h3>
-          <h3>Copyright © {year} SB</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Customized and Enhanced by Jeffrey Ren | 2023</h3>
-          <h3>Features added: project detail modal; light & dark mode etc.</h3>
+          <h3>Customized and Enhanced by Jeffrey Ren | {year}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
