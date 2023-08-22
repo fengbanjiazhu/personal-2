@@ -1,22 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button, Form, Input } from "antd";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 function SendEmail() {
+  const formRef = useRef(null);
+
+  function resetForm() {
+    formRef.current?.resetFields();
+  }
+
   const onFinish = async ({ newText }) => {
-    const res = await emailjs.send(
-      "service_xvjx83l",
-      "template_yjfhmd5",
-      newText,
-      "5_umQmyV8eZQZzzDL"
-    );
-    // console.log(res);
+    try {
+      const res = await emailjs.send(
+        "service_xvjx83l",
+        "template_yjfhmd5",
+        newText,
+        "5_umQmyV8eZQZzzDL"
+      );
+      if (res.status !== 200) throw new Error("Something went wrong, please try again later");
+
+      resetForm();
+      toast.success("Successfully send!");
+    } catch (error) {
+      toast.error(error.message);
+    }
   };
 
   return (
     <Form
       name="nest-messages"
       onFinish={onFinish}
+      ref={formRef}
       style={{
         margin: "auto",
         maxWidth: 600,

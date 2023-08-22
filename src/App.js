@@ -12,6 +12,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { DarkModeProvider } from "./ui/darkmodeContext";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -39,6 +40,17 @@ function App() {
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           <Footer />
+          <Toaster
+            position="top-center"
+            reverseOrder={false}
+            gutter={8}
+            toastOptions={{
+              duration: 3000,
+              style: {
+                zIndex: 2,
+              },
+            }}
+          />
         </div>
       </Router>
     </DarkModeProvider>
