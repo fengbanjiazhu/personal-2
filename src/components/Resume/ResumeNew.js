@@ -35,11 +35,11 @@ function ResumeNew() {
             &nbsp;Download CV
           </Button>
         </Row>
-        {/* <br />
+        <br />
         OR send me a message
         <Row style={{ justifyContent: "center", position: "relative", marginTop: "1rem" }}>
           <SendEmail />
-        </Row> */}
+        </Row>
       </Container>
     </div>
   );

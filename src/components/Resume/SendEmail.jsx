@@ -4,15 +4,11 @@ import emailjs from "@emailjs/browser";
 
 function SendEmail() {
   const onFinish = async (values) => {
-    const textObj = values.newText;
-
-    const formData = new FormData();
-    Object.keys(textObj).forEach((key) => formData.append(key, textObj[key]));
-
+    const form = document.getElementById("nest-messages");
     const res = await emailjs.sendForm(
       "service_xvjx83l",
       "template_yjfhmd5",
-      formData,
+      form,
       "5_umQmyV8eZQZzzDL"
     );
 
