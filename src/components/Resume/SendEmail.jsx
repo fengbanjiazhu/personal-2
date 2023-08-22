@@ -3,16 +3,14 @@ import { Button, Form, Input } from "antd";
 import emailjs from "@emailjs/browser";
 
 function SendEmail() {
-  const onFinish = async (values) => {
-    const form = document.getElementById("nest-messages");
-    const res = await emailjs.sendForm(
+  const onFinish = async ({ newText }) => {
+    const res = await emailjs.send(
       "service_xvjx83l",
       "template_yjfhmd5",
-      form,
+      newText,
       "5_umQmyV8eZQZzzDL"
     );
-
-    console.log(res);
+    // console.log(res);
   };
 
   return (
