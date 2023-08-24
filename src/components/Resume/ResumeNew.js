@@ -8,6 +8,7 @@ import SendEmail from "./SendEmail";
 import pdf from "../../Assets/../Assets/F-R-github.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { FaLinkedinIn } from "react-icons/fa";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
@@ -22,8 +23,8 @@ function ResumeNew() {
 
   return (
     <div>
+      <Particle />
       <Container fluid className="resume-section">
-        <Particle />
         <Row className="resume">
           <Document file={resumeLink} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
@@ -36,7 +37,21 @@ function ResumeNew() {
           </Button>
         </Row>
         <br />
-        OR send me a message
+        Find out more info about me through{" "}
+        <a
+          href="https://www.linkedin.com/in/feixiang-r-10b266261/"
+          style={{ color: "white" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedinIn />
+        </a>
+        <br />
+        <br />
+        OR
+        <br />
+        <br />
+        Send me a message
         <Row style={{ justifyContent: "center", position: "relative", marginTop: "1rem" }}>
           <SendEmail />
         </Row>
