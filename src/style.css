@@ -338,6 +338,10 @@ button:focus {
   padding-left: 45px !important;
 }
 
+#prefer-name {
+  font-size: 1.2rem;
+}
+
 .main-name {
   color: var(--imp-text-color);
 }

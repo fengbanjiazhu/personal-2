@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import ProjectCarousel from "./ProjectCarousel";
 import StatusTag from "../../ui/StatusTag";
+import { Spin } from "antd";
 
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
@@ -20,6 +21,7 @@ function ProjectCards({
   hosting = "no-hosting-plan",
 }) {
   const [show, setShow] = useState(false);
+  const [loadImg, setLoadImg] = useState(true);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -33,7 +35,10 @@ function ProjectCards({
   return (
     <>
       <Card className="project-card-view">
-        <Card.Img variant="top" src={imgPath} alt="card-img" />
+        <Spin spinning={loadImg}>
+          <Card.Img onLoad={() => setLoadImg(false)} variant="top" src={imgPath} alt="card-img" />
+        </Spin>
+
         <Card.Body>
           <Card.Title>{title}</Card.Title>
 
