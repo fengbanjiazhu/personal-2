@@ -16,6 +16,9 @@ import wildOasis1 from "../../Assets/Projects/wild-oasis/wild-oasis-1.jpg";
 import wildOasis2 from "../../Assets/Projects/wild-oasis/wild-oasis-2.jpg";
 import wildOasis3 from "../../Assets/Projects/wild-oasis/wild-oasis-3.jpg";
 
+import xml1 from "../../Assets/Projects/XML/XML.jpg";
+import xml2 from "../../Assets/Projects/XML/XML2.jpg";
+
 import natours from "../../Assets/Projects/natours.jpg";
 import forkify from "../../Assets/Projects/forkify.jpg";
 import pokedex from "../../Assets/Projects/poke-dex.jpg";
@@ -109,6 +112,18 @@ function Projects() {
               description="React focused project."
               ghLink="https://github.com/fengbanjiazhu/React-vite-pizza"
               demoLink="https://dulcet-dasik-a3ce2f.netlify.app/"
+            />
+          </Col>
+
+          {/* XML */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              images={[xml1, xml2]}
+              imgPath={xml1}
+              isBlog={false}
+              title="XML"
+              description="XML file from learning project with DTD Validation. Self designed."
+              ghLink="https://github.com/fengbanjiazhu/XML-DTD"
             />
           </Col>
 
