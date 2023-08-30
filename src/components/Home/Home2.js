@@ -30,6 +30,10 @@ function Home2() {
                 <b className="purple"> PHP and SQL database.</b>
               </i>
               <br />
+              <br />I never stopped self-developing and currently seeking for a{" "}
+              <i>
+                <b className="purple">new start.</b>
+              </i>
               <br />
               Looking forward to have an opportunity that will allow me to work with experienced
               professionals and contribute to the development of&nbsp;
