@@ -15,7 +15,7 @@
     --color-blue-900: #32447586;
 
     --color-green-100: #f0fdf4;
-    --color-green-700: #22c55e;
+    --color-green-700: #0cce53;
     --color-red-100: #fef2f2;
     --color-red-700: #ef4444;
 
@@ -46,7 +46,7 @@
     --color-blue-900: #7b93aa;
 
     --color-green-100: #166534;
-    --color-green-700: #dcfce7;
+    --color-green-700: #8dd2a5;
     --color-red-700: #fef2f2;
     --color-red-100: #ef4444;
     --color-yellow-100: #dcaa12;
@@ -660,6 +660,10 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+}
+
+#currentProcess {
+  color: var(--color-green-700);
 }
 
 @media (max-width: 767px) {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline } from "antd";
+import { ImPointRight } from "react-icons/im";
 
 const TimeLine = () => (
   <Timeline
@@ -30,7 +31,12 @@ const TimeLine = () => (
           <>
             <h5>2023</h5>
             <p>Gaining an IT diploma from TAFE NSW</p>
-            <p>Seeking for an industry opportunity</p>
+            <p>Learning Improving application performance</p>
+
+            <h6 id="currentProcess">
+              {" "}
+              <ImPointRight /> Currently Learning about React Native
+            </h6>
           </>
         ),
       },
@@ -39,9 +45,7 @@ const TimeLine = () => (
         children: (
           <>
             <h5>My future learning plan:</h5>
-            <p>Learning about React Native</p>
-            <p>Learning about Next.JS</p>
-            <p>Or any language industry needs...</p>
+            <p>Learning about Next.JS & Remix</p>
           </>
         ),
       },
