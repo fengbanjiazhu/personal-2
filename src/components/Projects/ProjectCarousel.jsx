@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Image } from "antd";
 
-function ProjectCarousel({ images }) {
+function ProjectCarousel({ images, isApp }) {
   if (!images) return null;
 
   return (

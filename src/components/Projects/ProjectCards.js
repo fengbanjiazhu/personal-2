@@ -17,7 +17,7 @@ function ProjectCards({
   description,
   ghLink,
   demoLink,
-  isBlog,
+  isApp,
   hosting = "no-hosting-plan",
 }) {
   const [show, setShow] = useState(false);
@@ -48,26 +48,26 @@ function ProjectCards({
         </Card.Body>
       </Card>
 
-      <Modal size="lg" centered={true} show={show} onHide={handleClose}>
+      <Modal size={isApp ? "" : "lg"} centered={true} show={show} onHide={handleClose}>
         <Modal.Header closeButton closeVariant="white">
           <Modal.Title>Detail of {title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <StatusTag type={hostStatus[hosting]}>{hosting.replaceAll("-", " ")}</StatusTag>
-          {images && <ProjectCarousel images={images} />}
+          {images && <ProjectCarousel isApp={isApp} images={images} />}
           <p style={{ marginTop: "1rem" }}>{description}</p>
         </Modal.Body>
+
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
 
           <Button variant="primary" href={ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {isBlog ? "Blog" : "GitHub"}
+            <BsGithub /> &nbsp; GitHub
           </Button>
 
-          {!isBlog && demoLink && (
+          {demoLink && (
             <Button
               variant="primary"
               href={demoLink}

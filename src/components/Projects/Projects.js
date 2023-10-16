@@ -1,161 +1,42 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import uptown1 from "../../Assets/Projects/uptown/uptown-1.jpg";
-import uptown2 from "../../Assets/Projects/uptown/uptown-2.jpg";
-import uptown3 from "../../Assets/Projects/uptown/uptown-3.jpg";
-import uptown4 from "../../Assets/Projects/uptown/uptown-4.jpg";
-import uptown5 from "../../Assets/Projects/uptown/uptown-5.jpg";
+import { Container } from "react-bootstrap";
+import { Tabs } from "antd";
 
-import phpLms1 from "../../Assets/Projects/php-lms/php-lms-1.jpg";
-import phpLms2 from "../../Assets/Projects/php-lms/php-lms-2.jpg";
+import WebProjects from "./WebProjects";
+import AppProjects from "./AppProjects";
 
-import wildOasis1 from "../../Assets/Projects/wild-oasis/wild-oasis-1.jpg";
-import wildOasis2 from "../../Assets/Projects/wild-oasis/wild-oasis-2.jpg";
-import wildOasis3 from "../../Assets/Projects/wild-oasis/wild-oasis-3.jpg";
-
-import xml1 from "../../Assets/Projects/XML/XML.jpg";
-import xml2 from "../../Assets/Projects/XML/XML2.jpg";
-
-import natours from "../../Assets/Projects/natours.jpg";
-import forkify from "../../Assets/Projects/forkify.jpg";
-import pokedex from "../../Assets/Projects/poke-dex.jpg";
-import reactVitePizza from "../../Assets/Projects/react-pizza.jpg";
-import dummyQuotes from "../../Assets/Projects/dummy-quotes.jpg";
+const mainProjects = [
+  { name: "Web Projects", children: <WebProjects /> },
+  { name: "App Projects", children: <AppProjects /> },
+];
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>Here are a few projects I've worked on recently.</p>
 
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {/* Uptown */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[uptown1, uptown2, uptown3, uptown4, uptown5]}
-              imgPath={uptown1}
-              isBlog={false}
-              title="Uptown project"
-              hosting="pending"
-              description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with google dialogFlow."
-              ghLink="https://github.com/fengbanjiazhu/Uptown"
-            />
-          </Col>
-          {/* PHP-LMS */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[phpLms1, phpLms2]}
-              imgPath={phpLms1}
-              isBlog={false}
-              title="PHP LMS"
-              description="PHP library management system, with admin page for CMS."
-              ghLink="https://github.com/fengbanjiazhu/php-LMS"
-            />
-          </Col>
-          {/* Wild Oasis */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[wildOasis1, wildOasis2, wildOasis3]}
-              imgPath={wildOasis1}
-              isBlog={false}
-              title="Wild Oasis"
-              hosting="hosted"
-              description="Frontend: React, Backend: Supabase. A react booking management web app. React Query; React hook form; Supabase; Styled component;  //TEST ACCOUNT will be available soon"
-              ghLink="https://github.com/fengbanjiazhu/Wild-Oasis"
-              demoLink="https://inquisitive-wisp-64740b.netlify.app/login"
-            />
-          </Col>
+      <h1 className="project-heading">
+        My Recent <strong className="purple">Works </strong>
+      </h1>
+      <p style={{ color: "white" }}>Here are a few projects I've worked on recently.</p>
 
-          {/* Natours */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[natours]}
-              imgPath={natours}
-              isBlog={false}
-              title="Natours"
-              hosting="hosted"
-              description="Server side rendering with Node.JS. Tour booking website."
-              ghLink="https://github.com/fengbanjiazhu/Natours"
-              demoLink="https://natours-project-7nqu.onrender.com/"
-            />
-          </Col>
+      <Tabs
+        defaultActiveKey="1"
+        type="card"
+        centered
+        animated={true}
+        items={mainProjects.map((item, i) => {
+          return {
+            label: item.name,
+            key: i,
+            children: item.children,
+          };
+        })}
+      />
 
-          {/* pokedex */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[pokedex]}
-              imgPath={pokedex}
-              isBlog={false}
-              title="Pokedex"
-              hosting="hosted"
-              description="Build with pure JS. Searching for pokemon details."
-              ghLink="https://github.com/fengbanjiazhu/PokeDex"
-              demoLink="https://fengbanjiazhu.github.io/PokeDex/"
-            />
-          </Col>
-
-          {/* react-pizza */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[reactVitePizza]}
-              imgPath={reactVitePizza}
-              isBlog={false}
-              title="React Pizza"
-              hosting="hosted"
-              description="React focused project."
-              ghLink="https://github.com/fengbanjiazhu/React-vite-pizza"
-              demoLink="https://dulcet-dasik-a3ce2f.netlify.app/"
-            />
-          </Col>
-
-          {/* XML */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[xml1, xml2]}
-              imgPath={xml1}
-              isBlog={false}
-              title="XML"
-              description="XML file from learning project with DTD Validation. Self designed."
-              ghLink="https://github.com/fengbanjiazhu/XML-DTD"
-            />
-          </Col>
-
-          {/* react dummy quote */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[dummyQuotes]}
-              imgPath={dummyQuotes}
-              isBlog={false}
-              title="React Dummy Quotes"
-              hosting="hosted"
-              description="A dummy quotes build with React, uses hooks, router.(Fetching online Firebase API)"
-              ghLink="https://github.com/fengbanjiazhu/quotes"
-              demoLink="hhttps://fengbanjiazhu.github.io/quotes"
-            />
-          </Col>
-
-          {/* Forkify */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              images={[forkify]}
-              imgPath={forkify}
-              isBlog={false}
-              title="Forkify"
-              hosting="hosted"
-              description="Build with pure JS. Front end focused."
-              ghLink="https://github.com/fengbanjiazhu/Forkify-practice"
-              demoLink="https://silly-ganache-79ed83.netlify.app"
-            />
-          </Col>
-        </Row>
-      </Container>
+      {/* <WebProjects></WebProjects> */}
     </Container>
   );
 }
