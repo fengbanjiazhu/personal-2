@@ -26,6 +26,8 @@ function Projects() {
         defaultActiveKey="1"
         type="card"
         centered
+        tabBarStyle={{ color: "white" }}
+        tabBarGutter={20}
         animated={true}
         items={mainProjects.map((item, i) => {
           return {
