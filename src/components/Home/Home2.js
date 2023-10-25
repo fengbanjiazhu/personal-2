@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Tooltip } from "antd";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
@@ -14,21 +16,32 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
+
             <p className="home-about-body">
               I am a junior full stack web developer with a strong passion in web development
               <br />
               <br />
               My tech stack includes
               <i>
-                <b className="purple"> HTML, CSS, JavaScript, React frameworks. Node.js </b>
-                and
-                <b className="purple"> NoSQL database. </b>
+                <b className="purple">
+                  {" "}
+                  HTML, CSS, <Tooltip title="ES6,">JavaScript</Tooltip>,{" "}
+                  <Tooltip title="Zod Schema Validation">TypeScript</Tooltip>,{" "}
+                  <Tooltip title="Redux,Router,React-Query">React</Tooltip>,{" "}
+                  <Tooltip title="React Navigation">React Native</Tooltip>,{" "}
+                  <Tooltip title="Express, JWT">Node.Js</Tooltip>.{" "}
+                </b>
+                and{" "}
+                <b className="purple">
+                  <Tooltip title="MongoDB">NoSQL database</Tooltip>
+                </b>
               </i>
               <br />
               <br />I am Familiar with&nbsp;
               <i>
-                <b className="purple"> PHP and SQL database.</b>
+                <b className="purple"> PHP, MySQL database.</b>
               </i>
+              <br />
               <br />
               <br />I never stopped self-developing and currently seeking for a{" "}
               <i>

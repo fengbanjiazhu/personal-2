@@ -45,7 +45,9 @@ const TimeLine = () => (
         children: (
           <>
             <h5>My future learning plan:</h5>
+
             <p>Learning about Next.JS & Remix</p>
+            <p>Learning software development</p>
           </>
         ),
       },
