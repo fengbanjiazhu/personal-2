@@ -5,6 +5,17 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import TooltipBox from "./TooltipBox";
+
+const techStack = [
+  { name: " HTML, CSS,", extra: "" },
+  { name: "JavaScript,", extra: "ES6" },
+  { name: "TypeScript,", extra: "Zod Schema Validation" },
+  { name: "React,", extra: "Redux,Router,React-Query" },
+  { name: "React Native,", extra: "React Navigation" },
+  { name: "Node.Js,", extra: "Express, JWT" },
+  { name: "NoSQL database,", extra: "MongoDB" },
+];
 
 function Home2() {
   return (
@@ -20,38 +31,26 @@ function Home2() {
               I am a junior full stack web developer with a strong passion in web development
               <br />
               <br />
-              My tech stack includes
-              <i>
-                <b className="purple">
-                  {" "}
-                  HTML, CSS, <Tooltip title="ES6,">JavaScript</Tooltip>,{" "}
-                  <Tooltip title="Zod Schema Validation">TypeScript</Tooltip>,{" "}
-                  <Tooltip title="Redux,Router,React-Query">React</Tooltip>,{" "}
-                  <Tooltip title="React Navigation">React Native</Tooltip>,{" "}
-                  <Tooltip title="Express, JWT">Node.Js</Tooltip>.{" "}
-                </b>
-                and{" "}
-                <b className="purple">
-                  <Tooltip title="MongoDB">NoSQL database</Tooltip>
-                </b>
-              </i>
+              My tech stack includes{" "}
+              {techStack.map((item, index) => {
+                return <TooltipBox key={index} text={item.name} tip={item.extra} />;
+              })}
+              and{" "}
+              <TooltipBox
+                text="Other Third Party Libraries."
+                tip="Google Firebase, Strip, SendGrid"
+              />
               <br />
               <br />I am Familiar with&nbsp;
-              <i>
-                <b className="purple"> PHP, MySQL database.</b>
-              </i>
+              <b className="purple"> PHP, MySQL database.</b>
               <br />
               <br />
               <br />I never stopped self-developing and currently seeking for a{" "}
-              <i>
-                <b className="purple">new start.</b>
-              </i>
+              <b className="purple">new start.</b>
               <br />
               Looking forward to have an opportunity that will allow me to work with experienced
               professionals and contribute to the development of&nbsp;
-              <i>
-                <b className="purple">high-performance website applications.</b>
-              </i>
+              <b className="purple">high-performance website applications.</b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
