@@ -6,9 +6,10 @@ import logoLight from "../Assets/logo-light.png";
 import logoDark from "../Assets/logo-dark.png";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
-import DarkModeToggleButton from "../ui/DarkModeToggle";
 import { CgFileDocument } from "react-icons/cg";
 import { useDarkMode } from "../ui/darkmodeContext";
+
+import DarkModeButton from "../ui/DarkModeButton";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -67,8 +68,8 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <DarkModeToggleButton />
+            <Nav.Item style={{ padding: "0.3rem 0" }}>
+              <DarkModeButton />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
