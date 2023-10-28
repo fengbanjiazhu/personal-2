@@ -35,9 +35,10 @@ function WebProjects() {
             imgPath={uptown1}
             isApp={false}
             title="Uptown project"
-            hosting="pending"
+            hosting="hosted"
             description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with google dialogFlow."
             ghLink="https://github.com/fengbanjiazhu/Uptown"
+            demoLink="https://jeff-uptown.netlify.app/"
           />
         </Col>
         {/* PHP-LMS */}
