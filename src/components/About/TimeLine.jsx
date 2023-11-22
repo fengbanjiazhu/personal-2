@@ -32,10 +32,11 @@ const TimeLine = () => (
             <h5>2023</h5>
             <p>Gaining an IT diploma from TAFE NSW</p>
             <p>Learning Improving application performance</p>
+            <p>Learning about React Native</p>
 
             <h6 id="currentProcess">
               {" "}
-              <ImPointRight /> Currently Learning about React Native
+              <ImPointRight /> Currently Learning JAVA
             </h6>
           </>
         ),
