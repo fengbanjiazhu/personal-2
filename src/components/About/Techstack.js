@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiJavascript1, DiReact, DiNodejs, DiMongodb, DiGit } from "react-icons/di";
-import { SiDialogflow, SiMysql, SiHtml5, SiCss3, SiPhp, SiTypescript } from "react-icons/si";
+import { SiMysql, SiHtml5, SiCss3, SiPhp, SiTypescript } from "react-icons/si";
 
 function Techstack() {
   return (
