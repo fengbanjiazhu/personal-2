@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useDarkMode } from "./darkmodeContext";
+import pilotBear from "../Assets/pilot-bear.svg";
 
 function DarkModeButton() {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -36,11 +37,7 @@ function DarkModeButton() {
           </svg>
           <span aria-hidden={true} className="pilot__container">
             <span className="pilot-bear">
-              <img
-                src="https://assets.codepen.io/605876/pilot-bear.svg"
-                alt="pilot-bear"
-                className="pilot"
-              />
+              <img src={pilotBear} alt="pilot-bear" className="pilot" />
             </span>
           </span>
           <svg
