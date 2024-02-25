@@ -27,7 +27,8 @@ function Home2() {
             </h1>
 
             <p className="home-about-body">
-              I am a junior full stack web developer with a strong passion in web development
+              I am a passionated junior full stack developer, interested in improving user’s
+              experience.
               <br />
               <br />
               My tech stack includes{" "}
@@ -41,15 +42,18 @@ function Home2() {
               />
               <br />
               <br />I am Familiar with&nbsp;
-              <b className="purple"> PHP, MySQL database.</b>
+              <b className="purple"> PHP, MySQL database.</b> and currently working on learn{" "}
+              <b className="purple"> Python & Java.</b>
               <br />
               <br />
-              <br />I never stopped self-developing and currently seeking for a{" "}
-              <b className="purple">new start.</b>
+              <br />I have learnt coding while working, and have been granted an IT diploma (Web
+              focus). Now I am a full time uni student, I wish to dip further in coding and
+              development.
               <br />
-              Looking forward to have an opportunity that will allow me to work with experienced
-              professionals and contribute to the development of&nbsp;
-              <b className="purple">high-performance website applications.</b>
+              <br />I am seeking for an internship opportunity, or part-time work allows me to work
+              with experienced professionals. I see myself as a life time learner, I deeply believe
+              learning will lead me to a &nbsp;
+              <b className="purple">better human being</b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
