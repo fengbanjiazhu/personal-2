@@ -13,10 +13,25 @@ import AccountManage1 from "../../Assets/Projects/Account-Manage/AccountManage1.
 import AccountManage2 from "../../Assets/Projects/Account-Manage/AccountManage2.png";
 import AccountManage3 from "../../Assets/Projects/Account-Manage/AccountManage3.png";
 
+import Stock1 from "../../Assets/Projects/Stock/Stock1.png";
+import Stock2 from "../../Assets/Projects/Stock/Stock2.png";
+import Stock3 from "../../Assets/Projects/Stock/Stock3.png";
+
 function AppProjects() {
   return (
     <Container>
       <Row>
+        <Col md={3} className="project-card">
+          <ProjectCard
+            images={[Stock1, Stock2, Stock3]}
+            imgPath={Stock1}
+            isApp={true}
+            title="Stock View (TS)"
+            description="App build with React Native Expo. TS, ZOD, graphql (by StepZen). A stock view APP, user could tracking the latest stock information."
+            ghLink="https://github.com/fengbanjiazhu/Stock"
+          />
+        </Col>
+
         <Col md={3} className="project-card">
           <ProjectCard
             images={[
