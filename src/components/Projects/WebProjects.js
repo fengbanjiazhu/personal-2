@@ -54,8 +54,8 @@ function WebProjects() {
             title="NetFun Tools"
             hosting="hosted"
             description="A light-weight tool for Network Fundamental. Made for fun. Typescript, React Router, Shadcn/UI, TailwindCSS."
-            ghLink="https://github.com/fengbanjiazhu/Uptown"
-            demoLink="https://jeff-uptown.netlify.app/"
+            ghLink="https://github.com/fengbanjiazhu/NetFunTools"
+            demoLink="https://netfuntool.netlify.app/"
           />
         </Col>
 
@@ -82,8 +82,8 @@ function WebProjects() {
             title="Natours"
             hosting="hosted"
             description="Server side rendering with Node.JS. Tour booking website."
-            ghLink="https://github.com/fengbanjiazhu/NetFunTools"
-            demoLink="https://netfuntool.netlify.app/"
+            ghLink="https://github.com/fengbanjiazhu/Natours"
+            demoLink="https://natours-project-7nqu.onrender.com/"
           />
         </Col>
 
