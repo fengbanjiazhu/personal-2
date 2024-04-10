@@ -18,6 +18,9 @@ import wildOasis3 from "../../Assets/Projects/wild-oasis/wild-oasis-3.jpg";
 import xml1 from "../../Assets/Projects/XML/XML.jpg";
 import xml2 from "../../Assets/Projects/XML/XML2.jpg";
 
+import nft1 from "../../Assets/Projects/NetFunTools/NetFunTools-1.jpg";
+import nft2 from "../../Assets/Projects/NetFunTools/NetFunTools-2.jpg";
+
 import natours from "../../Assets/Projects/natours.jpg";
 import forkify from "../../Assets/Projects/forkify.jpg";
 import pokedex from "../../Assets/Projects/poke-dex.jpg";
@@ -36,22 +39,26 @@ function WebProjects() {
             isApp={false}
             title="Uptown project"
             hosting="hosted"
-            description="A MERN stack web app. Node.js for backend, protected route, full account system (signup,login ect). Shopping system build with React-Stripe. Email system build with SendGrid. Chatbot build with google dialogFlow."
+            description="A MERN stack web app. JWT for Validation. Payment system with Stripe. Email system with SendGrid. Chatbot with Google DialogFlow."
             ghLink="https://github.com/fengbanjiazhu/Uptown"
             demoLink="https://jeff-uptown.netlify.app/"
           />
         </Col>
-        {/* PHP-LMS */}
+
+        {/* NetFun Tool */}
         <Col md={4} className="project-card">
           <ProjectCard
-            images={[phpLms1, phpLms2]}
-            imgPath={phpLms1}
+            images={[nft1, nft2]}
+            imgPath={nft1}
             isApp={false}
-            title="PHP LMS"
-            description="PHP library management system, with admin page for CMS."
-            ghLink="https://github.com/fengbanjiazhu/php-LMS"
+            title="NetFun Tools"
+            hosting="hosted"
+            description="A light-weight tool for Network Fundamental. Made for fun. Typescript, React Router, Shadcn/UI, TailwindCSS."
+            ghLink="https://github.com/fengbanjiazhu/Uptown"
+            demoLink="https://jeff-uptown.netlify.app/"
           />
         </Col>
+
         {/* Wild Oasis */}
         <Col md={4} className="project-card">
           <ProjectCard
@@ -75,8 +82,20 @@ function WebProjects() {
             title="Natours"
             hosting="hosted"
             description="Server side rendering with Node.JS. Tour booking website."
-            ghLink="https://github.com/fengbanjiazhu/Natours"
-            demoLink="https://natours-project-7nqu.onrender.com/"
+            ghLink="https://github.com/fengbanjiazhu/NetFunTools"
+            demoLink="https://netfuntool.netlify.app/"
+          />
+        </Col>
+
+        {/* PHP-LMS */}
+        <Col md={4} className="project-card">
+          <ProjectCard
+            images={[phpLms1, phpLms2]}
+            imgPath={phpLms1}
+            isApp={false}
+            title="PHP LMS"
+            description="PHP library management system, with admin page for CMS."
+            ghLink="https://github.com/fengbanjiazhu/php-LMS"
           />
         </Col>
 
