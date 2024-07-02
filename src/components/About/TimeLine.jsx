@@ -12,8 +12,7 @@ const TimeLine = () => (
         children: (
           <>
             <h5>2021</h5>
-            <p>Shop owner</p>
-            <p>Learning coding part-timely with online bootcamp</p>
+            <p>Self learning through online bootcamp while working</p>
           </>
         ),
       },
@@ -21,8 +20,8 @@ const TimeLine = () => (
         color: "green",
         children: (
           <>
-            <h5>mid 2022</h5>
-            <p>Improving myself with Udemy online</p>
+            <h5>2022</h5>
+            <p>Continue learning through Udemy online</p>
           </>
         ),
       },
@@ -33,10 +32,18 @@ const TimeLine = () => (
             <p>Gaining an IT diploma from TAFE NSW</p>
             <p>Learning Improving application performance</p>
             <p>Learning about React Native</p>
+          </>
+        ),
+      },
+      {
+        children: (
+          <>
+            <h5>2024</h5>
+            <p>Learning about Next.JS</p>
 
             <h6 id="currentProcess">
               {" "}
-              <ImPointRight /> Currently Learning JAVA
+              <ImPointRight /> Full time student in UTS
             </h6>
           </>
         ),
@@ -47,8 +54,7 @@ const TimeLine = () => (
           <>
             <h5>My future learning plan:</h5>
 
-            <p>Learning about Next.JS & Remix</p>
-            <p>Learning software development</p>
+            <p>Learning about Game development</p>
           </>
         ),
       },
