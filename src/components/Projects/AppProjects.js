@@ -2,20 +2,20 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 
-import DummyRecipes1 from "../../Assets/Projects/Dummy-Recipes/DummyRecipes1.png";
-import DummyRecipes2 from "../../Assets/Projects/Dummy-Recipes/DummyRecipes2.png";
-import DummyRecipes3 from "../../Assets/Projects/Dummy-Recipes/DummyRecipes3.png";
-import DummyRecipes4 from "../../Assets/Projects/Dummy-Recipes/DummyRecipes4.png";
-import DummyRecipes5 from "../../Assets/Projects/Dummy-Recipes/DummyRecipes5.png";
-import DummyRecipes6 from "../../Assets/Projects/Dummy-Recipes/DummyRecipes6.png";
+import DummyRecipes1 from "../../Assets/Projects/Dummy-Recipes/Dummy_Recipes1.png";
+import DummyRecipes2 from "../../Assets/Projects/Dummy-Recipes/Dummy_Recipes2.png";
+import DummyRecipes3 from "../../Assets/Projects/Dummy-Recipes/Dummy_Recipes3.png";
+import DummyRecipes4 from "../../Assets/Projects/Dummy-Recipes/Dummy_Recipes4.png";
+import DummyRecipes5 from "../../Assets/Projects/Dummy-Recipes/Dummy_Recipes5.png";
+import DummyRecipes6 from "../../Assets/Projects/Dummy-Recipes/Dummy_Recipes6.png";
 
-import AccountManage1 from "../../Assets/Projects/Account-Manage/AccountManage1.png";
-import AccountManage2 from "../../Assets/Projects/Account-Manage/AccountManage2.png";
-import AccountManage3 from "../../Assets/Projects/Account-Manage/AccountManage3.png";
+import AccountManage1 from "../../Assets/Projects/Account-Manage/Account_Manage1.png";
+import AccountManage2 from "../../Assets/Projects/Account-Manage/Account_Manage2.png";
+import AccountManage3 from "../../Assets/Projects/Account-Manage/Account_Manage3.png";
 
-import Stock1 from "../../Assets/Projects/Stock/Stock1.png";
-import Stock2 from "../../Assets/Projects/Stock/Stock2.png";
-import Stock3 from "../../Assets/Projects/Stock/Stock3.png";
+import Stock1 from "../../Assets/Projects/Stock/Stock-1.png";
+import Stock2 from "../../Assets/Projects/Stock/Stock-2.png";
+import Stock3 from "../../Assets/Projects/Stock/Stock-3.png";
 
 function AppProjects() {
   return (

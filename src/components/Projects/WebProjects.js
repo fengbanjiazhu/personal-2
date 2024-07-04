@@ -2,14 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 
-import uptown1 from "../../Assets/Projects/uptown/uptown-1.jpg";
-import uptown2 from "../../Assets/Projects/uptown/uptown-2.jpg";
-import uptown3 from "../../Assets/Projects/uptown/uptown-3.jpg";
-import uptown4 from "../../Assets/Projects/uptown/uptown-4.jpg";
-import uptown5 from "../../Assets/Projects/uptown/uptown-5.jpg";
+import uptown1 from "../../Assets/Projects/uptown/uptown_1.jpg";
+import uptown2 from "../../Assets/Projects/uptown/uptown_2.jpg";
+import uptown3 from "../../Assets/Projects/uptown/uptown_3.jpg";
+import uptown4 from "../../Assets/Projects/uptown/uptown_4.jpg";
+import uptown5 from "../../Assets/Projects/uptown/uptown_5.jpg";
 
-import phpLms1 from "../../Assets/Projects/php-lms/php-lms-1.jpg";
-import phpLms2 from "../../Assets/Projects/php-lms/php-lms-2.jpg";
+import phpLms1 from "../../Assets/Projects/php-lms/php_lms-1.jpg";
+import phpLms2 from "../../Assets/Projects/php-lms/php_lms-2.jpg";
 
 import wildOasis1 from "../../Assets/Projects/wild-oasis/the-wild-oasis-1.jpg";
 import wildOasis2 from "../../Assets/Projects/wild-oasis/the-wild-oasis-2.jpg";
@@ -18,17 +18,17 @@ import wildOasis3 from "../../Assets/Projects/wild-oasis/the-wild-oasis-3.jpg";
 import nextOasis1 from "../../Assets/Projects/next-oasis/next-oasis-1.jpg";
 import nextOasis2 from "../../Assets/Projects/next-oasis/next-oasis-2.jpg";
 
-import xml1 from "../../Assets/Projects/XML/XML.jpg";
-import xml2 from "../../Assets/Projects/XML/XML2.jpg";
+import xml1 from "../../Assets/Projects/XML/XML-1.jpg";
+import xml2 from "../../Assets/Projects/XML/XML-2.jpg";
 
-import nft1 from "../../Assets/Projects/NetFunTools/NetFunTools-1.jpg";
-import nft2 from "../../Assets/Projects/NetFunTools/NetFunTools-2.jpg";
+import nft1 from "../../Assets/Projects/NetFunTools/NetFun_Tools-1.jpg";
+import nft2 from "../../Assets/Projects/NetFunTools/NetFun_Tools-2.jpg";
 
-import natours from "../../Assets/Projects/natours.jpg";
-import forkify from "../../Assets/Projects/forkify.jpg";
-import pokedex from "../../Assets/Projects/poke-dex.jpg";
-import reactVitePizza from "../../Assets/Projects/react-pizza.jpg";
-import dummyQuotes from "../../Assets/Projects/dummy-quotes.jpg";
+import natours from "../../Assets/Projects/the_natours.jpg";
+import forkify from "../../Assets/Projects/the_forkify.jpg";
+import pokedex from "../../Assets/Projects/the_pokedex.jpg";
+import reactVitePizza from "../../Assets/Projects/react_fast_pizza.jpg";
+import dummyQuotes from "../../Assets/Projects/dummy_quotes.jpg";
 
 // IMAGE SIZE: 1512*830
 
