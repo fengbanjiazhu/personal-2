@@ -11,9 +11,12 @@ import uptown5 from "../../Assets/Projects/uptown/uptown-5.jpg";
 import phpLms1 from "../../Assets/Projects/php-lms/php-lms-1.jpg";
 import phpLms2 from "../../Assets/Projects/php-lms/php-lms-2.jpg";
 
-import wildOasis1 from "../../Assets/Projects/wild-oasis/wild-oasis-1.jpg";
-import wildOasis2 from "../../Assets/Projects/wild-oasis/wild-oasis-2.jpg";
-import wildOasis3 from "../../Assets/Projects/wild-oasis/wild-oasis-3.jpg";
+import wildOasis1 from "../../Assets/Projects/wild-oasis/the-wild-oasis-1.jpg";
+import wildOasis2 from "../../Assets/Projects/wild-oasis/the-wild-oasis-2.jpg";
+import wildOasis3 from "../../Assets/Projects/wild-oasis/the-wild-oasis-3.jpg";
+
+import nextOasis1 from "../../Assets/Projects/next-oasis/next-oasis-1.jpg";
+import nextOasis2 from "../../Assets/Projects/next-oasis/next-oasis-2.jpg";
 
 import xml1 from "../../Assets/Projects/XML/XML.jpg";
 import xml2 from "../../Assets/Projects/XML/XML2.jpg";
@@ -26,6 +29,8 @@ import forkify from "../../Assets/Projects/forkify.jpg";
 import pokedex from "../../Assets/Projects/poke-dex.jpg";
 import reactVitePizza from "../../Assets/Projects/react-pizza.jpg";
 import dummyQuotes from "../../Assets/Projects/dummy-quotes.jpg";
+
+// IMAGE SIZE: 1512*830
 
 function WebProjects() {
   return (
@@ -59,17 +64,17 @@ function WebProjects() {
           />
         </Col>
 
-        {/* Wild Oasis */}
+        {/* Next Oasis */}
         <Col md={4} className="project-card">
           <ProjectCard
-            images={[wildOasis1, wildOasis2, wildOasis3]}
-            imgPath={wildOasis1}
+            images={[nextOasis1, nextOasis2]}
+            imgPath={nextOasis1}
             isApp={false}
-            title="Wild Oasis"
+            title="Next Oasis"
             hosting="hosted"
-            description="Frontend: React, Backend: Supabase. A react booking management web app. React Query; React hook form; Supabase; Styled component;  //TEST ACCOUNT will be available soon"
-            ghLink="https://github.com/fengbanjiazhu/Wild-Oasis"
-            demoLink="https://inquisitive-wisp-64740b.netlify.app/login"
+            description="Build with Next.Js, SSR web application. Next Auth, Supabase."
+            ghLink="https://github.com/fengbanjiazhu/oasis-next"
+            demoLink="https://oasis-next-delta.vercel.app/"
           />
         </Col>
 
@@ -124,6 +129,18 @@ function WebProjects() {
             description="React focused project."
             ghLink="https://github.com/fengbanjiazhu/React-vite-pizza"
             demoLink="https://dulcet-dasik-a3ce2f.netlify.app/"
+          />
+        </Col>
+
+        {/* Wild Oasis */}
+        <Col md={4} className="project-card">
+          <ProjectCard
+            images={[wildOasis1, wildOasis2, wildOasis3]}
+            imgPath={wildOasis1}
+            isApp={false}
+            title="Wild Oasis"
+            description="Frontend: React, Backend: Supabase. A react booking management web app. React Query; React hook form; Supabase; Styled component"
+            ghLink="https://github.com/fengbanjiazhu/Wild-Oasis"
           />
         </Col>
 
