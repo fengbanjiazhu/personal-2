@@ -22,7 +22,7 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div>
+    <section>
       <Particle />
       <Container fluid className="resume-section">
         <Row className="resume">
@@ -56,7 +56,7 @@ function ResumeNew() {
           <SendEmail />
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   DiJavascript1,
@@ -8,56 +7,99 @@ import {
   DiGit,
   DiJava,
   DiPython,
+  DiPostgresql,
 } from "react-icons/di";
-import { SiMysql, SiHtml5, SiCss3, SiPhp, SiTypescript, SiNextdotjs } from "react-icons/si";
+import {
+  SiMysql,
+  SiCss3,
+  SiPhp,
+  SiTypescript,
+  SiNextdotjs,
+  SiUnrealengine,
+  SiUnity,
+  SiPostman,
+} from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
+
+const techDividerStyle = { fontStyle: "italic" };
+const rowStyle = { justifyContent: "center", paddingBottom: "10px" };
+
+const ProgammingIcons = {
+  JS: <DiJavascript1 />,
+  TS: <SiTypescript />,
+  Java: <DiJava />,
+  Python: <DiPython />,
+  Cpp: <TbBrandCpp />,
+  PHP: <SiPhp />,
+  CSS: <SiCss3 />,
+};
+
+const DatabaseIcons = {
+  MySQL: <SiMysql />,
+  PostgreSQL: <DiPostgresql />,
+  MongoDB: <DiMongodb />,
+};
+
+const FrameworkIcons = {
+  Node: <DiNodejs />,
+  React: <DiReact />,
+  Next: <SiNextdotjs />,
+};
+
+const OtherIcon = {
+  Git: <DiGit />,
+  Unreal: <SiUnrealengine />,
+  Unity: <SiUnity />,
+  Postman: <SiPostman />,
+};
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
+    <>
+      <p style={techDividerStyle}>Programming languages</p>
+      <Row style={rowStyle}>
+        {Object.entries(ProgammingIcons).map(([key, icon]) => {
+          return (
+            <Col key={key} xs={4} md={2} className="tech-icons">
+              {icon}
+            </Col>
+          );
+        })}
+      </Row>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCss3 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPhp />
-      </Col>
+      <p style={techDividerStyle}>Database</p>
+      <Row style={rowStyle}>
+        {Object.entries(DatabaseIcons).map(([key, icon]) => {
+          return (
+            <Col key={key} xs={4} md={2} className="tech-icons">
+              {icon}
+            </Col>
+          );
+        })}
+      </Row>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
+      <p style={techDividerStyle}>Framework</p>
+      <Row style={rowStyle}>
+        {Object.entries(FrameworkIcons).map(([key, icon]) => {
+          return (
+            <Col key={key} xs={4} md={2} className="tech-icons">
+              {icon}
+            </Col>
+          );
+        })}
+      </Row>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-    </Row>
+      <p style={techDividerStyle}>Others</p>
+      <Row style={rowStyle}>
+        {Object.entries(OtherIcon).map(([key, icon]) => {
+          return (
+            <Col key={key} xs={4} md={2} className="tech-icons">
+              {icon}
+            </Col>
+          );
+        })}
+      </Row>
+    </>
   );
 }
 

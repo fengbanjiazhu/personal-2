@@ -96,6 +96,10 @@ button:focus {
   box-shadow: none !important;
 }
 
+section {
+  min-height: 95vh;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -398,7 +402,7 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
+  /* padding-bottom: 70px !important; */
   padding-top: 70px !important;
 }
 
@@ -486,6 +490,7 @@ button:focus {
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -630,7 +635,6 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--color-blue-700) !important;
   color: white !important;
@@ -649,6 +653,10 @@ button:focus {
   box-shadow: 4px 5px 4px 3px var(--card-shadow-color) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+}
+
+#tech-stack-category {
+  text-align: left !important;
 }
 
 @media (max-width: 767px) {
