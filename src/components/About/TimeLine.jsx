@@ -8,7 +8,6 @@ const TimeLine = () => (
       mode="left"
       items={[
         {
-          color: "green",
           children: (
             <>
               <h5>2021 & 2022</h5>
@@ -27,7 +26,6 @@ const TimeLine = () => (
           ),
         },
         {
-          color: "green",
           children: (
             <>
               <h5>2024</h5>
@@ -38,6 +36,7 @@ const TimeLine = () => (
           ),
         },
         {
+          color: "green",
           children: (
             <>
               <h5>2025</h5>
