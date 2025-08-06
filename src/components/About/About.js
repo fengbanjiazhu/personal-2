@@ -15,8 +15,21 @@ function About() {
           <Home2 />
         </Row>
 
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col md={5} style={{ paddingTop: "120px", textAlign: "right" }} className="about-img">
+        <Row
+          style={{
+            justifyContent: "center",
+            padding: "10px",
+            marginTop: "2rem",
+          }}
+        >
+          <Col
+            md={5}
+            style={{
+              paddingTop: "8rem",
+              textAlign: "left",
+            }}
+            className="about-img reveal-section"
+          >
             <h1 style={{ fontSize: "2em", paddingBottom: "2rem" }}>
               My <strong className="purple">Journey </strong>
             </h1>
@@ -29,6 +42,7 @@ function About() {
               paddingTop: "30px",
               paddingBottom: "50px",
             }}
+            className="reveal-section"
           >
             <h1 style={{ fontSize: "2em", paddingBottom: "20px" }}>
               My <strong className="purple">Skillset </strong>

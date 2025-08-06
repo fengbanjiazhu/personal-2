@@ -1150,3 +1150,37 @@ section {
   accent-color: var(--color);
   transition: accent-color var(--speed) var(--easing);
 }
+
+/* ANIMATION */
+
+@keyframes bumpIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0% 45% 20% 45%);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+.reveal-section {
+  cursor: pointer;
+  animation: reveal linear;
+  animation-timeline: view();
+  animation-range: entry 0% entry 85%;
+}
