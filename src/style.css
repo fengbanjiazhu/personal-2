@@ -1180,15 +1180,7 @@ section {
 
 .reveal-section {
   cursor: pointer;
-  /* animation: reveal linear;
+  animation: reveal linear;
   animation-timeline: view();
-  animation-range: entry 0% entry 85%; */
-}
-
-@supports (animation-timeline: view()) {
-  .reveal-section {
-    animation: reveal linear;
-    animation-timeline: view();
-    animation-range: entry 0% entry 85%;
-  }
+  animation-range: entry 0% entry 85%;
 }
