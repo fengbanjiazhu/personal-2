@@ -44,7 +44,7 @@ function WebProjects() {
             isApp={false}
             title="Uptown project"
             hosting="hosted"
-            description="A MERN stack web app. JWT for Validation. Payment system with Stripe. Email system with SendGrid. Chatbot with Google DialogFlow."
+            description="A MERN stack e-commerce web app. JWT for Validation. Payment system with Stripe. Email system with SendGrid. Chatbot with Google DialogFlow."
             ghLink="https://github.com/fengbanjiazhu/Uptown"
             demoLink="https://jeff-uptown.netlify.app/"
           />
@@ -72,7 +72,7 @@ function WebProjects() {
             isApp={false}
             title="Next Oasis"
             hosting="hosted"
-            description="Build with Next.Js, SSR web application. Next Auth, Supabase."
+            description="Build with Next.Js, SSR web online cabin booking system with calendar features. Auth.JS for Authentication, Supabase for Database and image storing. *Supabase is down, demo may not work.*"
             ghLink="https://github.com/fengbanjiazhu/oasis-next"
             demoLink="https://oasis-next-delta.vercel.app/"
           />
@@ -86,7 +86,7 @@ function WebProjects() {
             isApp={false}
             title="Natours"
             hosting="hosted"
-            description="Server side rendering with Node.JS. Tour booking website."
+            description="Server side rendering website build by Node.JS and Express. Tour booking website. Leaflet.JS for map. MongoDB for Database. PUG for Template."
             ghLink="https://github.com/fengbanjiazhu/Natours"
             demoLink="https://natours-project-7nqu.onrender.com/"
           />
