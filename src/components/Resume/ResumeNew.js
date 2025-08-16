@@ -5,14 +5,14 @@ import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import SendEmail from "./SendEmail";
 
-import pdf from "../../Assets/../Assets/FR_Jeffrey_GH.pdf";
+import pdf from "../../Assets/../Assets/FR_Jeffrey_Github.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { FaLinkedinIn } from "react-icons/fa";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/fengbanjiazhu/personal-2/main/src/Assets/FR_Jeffrey_GH.pdf";
+  "https://raw.githubusercontent.com/fengbanjiazhu/personal-2/main/src/Assets/FR_Jeffrey_Github.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
